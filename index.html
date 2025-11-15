@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tip Calculator — Card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-label="Tip calculator">
+      <div class="pill title">Tip Calculator</div>
+
+      <div class="inputs" role="group" aria-label="Inputs">
+        <label class="pill small" for="billInput">
+          <input id="billInput" type="number" min="0" step="0.01" placeholder="Enter total money" aria-label="Bill amount">
+        </label>
+
+        <label class="pill small" for="tipInput">
+          <input id="tipInput" type="number" min="0" step="0.1" placeholder="Enter percentage" aria-label="Tip percentage">
+        </label>
+      </div>
+
+      <!-- Tip button: clicking calculates and displays the result -->
+      <button id="calculateBtn" class="pill result" type="button" aria-live="polite">
+        Tip Amount: ₹0.00
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
